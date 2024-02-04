@@ -1,7 +1,11 @@
+'use client'
 import Image from 'next/image'
 import CustomButton from './CustomButton'
 
 const Hero = () => {
+  const handleScroll = () => {
+
+  }
   return (
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
@@ -11,7 +15,10 @@ const Hero = () => {
         <p className="hero__subtitle">
           Streamline your car rental process with our effortless booking experience.
         </p>
-        <CustomButton />
+        <CustomButton title="Explore Cars" containerStyles="bg-blue-400 text-white rounded-full mt-10" handleClick={handleScroll} />
+      </div>
+      <div className="hero__image-container">
+        
       </div>
     </div>
   )
